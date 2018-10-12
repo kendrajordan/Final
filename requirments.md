@@ -1,12 +1,27 @@
-1. The objective of this project is to keep track of the electric vehicle
-charging habits for residential users. The app will also keep track of the cost of charging their vehicle through a database calculating the rate of kilowatts per hour. Finally, the app should pull from two apis to estimate how much it would cost to take a trip in the electric vehicle.
+1.
+Objective:
+  1. Log charging sessions for both residential users and non-residential users. Include in the charge session data the amount of kwhs(kilowatt hours) collected when the vehicle is fully charged.
+  2. Provide how much it costs to charge the car at home and at public charging stations.
+  3. Estimate how far the electric car will go on one charge in a trip planner. If the car will run out of energy before reaching the user's destination, then the app should find the nearest charging station to fuel up.
+  4.  The app should finally ask the user some form questions to estimate how much they should expect to pay for fueling expenses either monthly and annually.
 
-2. The users would be electric vehicle owns and people who are curious about the costs of an ev compared the a gas car.
+Users:
+The users of my app would be electric vehicle owns who would like to keep track of their fueling expenses and would like to know how to efficiently plan their trips. Other people who don't own an electric vehicle and are curious about the costs associated with them can use the app to compare evs and gas cars.
 
-3. The issue is that many people don't know the actual cost of owning an electric vehicle and how owning an electric vehicle would benefit them. With this app, it will provide an estimated fueling cost the the ev and also will so the cost of driving it on certain trips.
 
-4. The files that this project will use will a index.html, main.scss, main.js, bootstrap, vue.js, and a database.
+Issue:
+The issue is that many people don't know the actual cost of driving an electric vehicle. With this app, it will help ev owners manage their fueling expenses and also help them adopt habits to drive more efficiently.
 
-5. As for design, one of the pages will contain a spreadsheet that will show the user's previous charging sessions and it should also contain a graph showing the cost of fueling the car over time. The another page should contain a questionnaire form that will then provide a rough estimate on how much it would cost to charge their car in their area.
 
-6. The data that will be used will be from multiple apis. The first api will be from https://openei.org/wiki/Utility_Rate_Database this api contains the cost per kwh based on the person's zip code. The google map's api https://developers.google.com/maps/documentation/ to get the distance and elevation information to and trip information. The third api I am considering using is open charge map https://openchargemap.org/site . To get the location of different charging stations if the user doesn't have access to a residential charging station. I will also be using a database to keep track of their charging habits.
+Files:
+The files that this project will be an index.html, main.scss, main.js, bootstrap, vue.js, and a database. I will also be using a few apis.
+
+Design Objectives:
+My first page will be called Charging Sessions. This page will contain a spreadsheet that will show the user's previous charging sessions and it should also contain a graph showing the fueling costs over time. The second page will be called the Fuel Cost Estimator. This should contain a questionnaire form that will then provide a rough estimate on how much it would cost to charge an electric car based on certain criteria such as the user's zip code, the car's mpge and if the person will be charging their car at home or at a public charging station. The third page will be called EV Trip Planner. This page should contain a map and fields for text input such as their starting location and and their destination. The page should also have enough space to include responsive messages based on the user's input.
+
+Data:
+The data will come from multiple sources. Some of these sources will be from a few apis. The first api will be from https://openei.org/wiki/Utility_Rate_Database this api contains the cost per kwh based on the person's zip code. The google map's api https://developers.google.com/maps/documentation/ to get the distance and elevation information for the trip information. The third api I am considering using is open charge map https://openchargemap.org/site. This is to get the location of different charging stations if the user doesn't have access to a residential charging station. I will also use a database to keep track of the users information.
+The user will be able to input the time they charge their car and when they finished. The user will also be able to plan a trip by inputing their current address and a given destination. The user should expect to see a message stating whether or not the user can make it to their destination on one charge or if they should go to a public charging station. Finally, the citizen should be able to fill out a questionnaire which in turn the app will provide the user with a monthly or yearly estimate on fueling expenses.
+
+Inspiration:
+I would like to make a website similar to ev explorer (https://gis.its.ucdavis.edu/evexplorer/#!/locations/startin) in the way that it is able to pull up information from fueleconomy.gov and eia.gov and use that information to calculate the annual vehicle energy costs for the three vehicles used to compare the costs between all electric vehicles and gas vehicles.

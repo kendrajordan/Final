@@ -1,24 +1,23 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-  
+    <title>Electric Drift</title>
+    <link href="/../css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <title>@yield('title')</title>
   </head>
+  <body class="bg-info container-fluid p-0 m-0">
+      <nav class="navbar  bg-primary p-0">
+        <div class="navbar-brand">Electric Drift</div>
+        @include('navigation')
+      </nav>
   <body class="container">
 
-      @include('navigation')
 
-      <h1 class="mt-3 mb-5">@yield('title')</h1>
 
       @yield('content')
 
-      @yield('title')
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

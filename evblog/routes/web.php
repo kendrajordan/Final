@@ -17,15 +17,15 @@ Route::get('/', function () {
 Route::get('/electricdrift/Homepage', function(){
   return view('electricdrift.Homepage');
 });
-Route::get('/electricdrift/Why drive',function(){
+Route::get('/electricdrift/Why_drive',function(){
   return view('electricdrift.Why_drive_electric');
 });
 Route::get('/electricdrift/tripplanner',function(){
   return view('electricdrift.tripplanner');
 });
-Route::get('electricdrift/faq', function(){
+Route::get('/electricdrift/faq', function(){
   return view('electricdrift.faq_page');
 });
-Route::get('fuel comparison',function(){
+Route::get('/fuel_comparison',function(){
   return view('electricdrift.fuel_comparison');
 });

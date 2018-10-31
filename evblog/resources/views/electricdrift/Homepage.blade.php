@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Electric Drift</title>
-    <link href="/../css/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-  </head>
-  <body class="bg-info container">
-      <nav class="navbar  navbar-primary bg-primary">
-        <div class="navbar-brand">Electric Drift</div>
-      </nav>
+      @extends('layout')
+      @section('content')
       <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
@@ -42,7 +32,7 @@
     </div>
     <div class=" newev">
       <h2 class="text-center">New to Evs?</h2>
-      <div class="row">
+      <div class="row pr-0 pl-0 mr-0 ml-0">
           <div class="col-sm-4 d-flex flex-column align-items-center pr-0 pl-0 text">
             <a href="#"><i class="far fa-question-circle fa-7x"></i><p class="text-center">F.A.Q</p></a>
           </div>
@@ -55,7 +45,7 @@
         </div>
         <div class="currentev">
           <h2 class="text-center">Already Own An EV?</h2>
-          <div class="row">
+          <div class="row pr-0 pl-0 mr-0 ml-0">
             <div class="col-sm-6 d-flex flex-column align-items-center pr-0 pl-0 text">
               <a href="#"><i class="fas fa-map-marked-alt fa-7x"></i><p class="text-center">Trip Planner</p></a>
             </div>
@@ -64,14 +54,10 @@
             </div>
           </div>
         </div>
-        <footer class="bg-primary">
-          <p>@2018</p>
-        </footer>
+
     </div>
+    <footer class="bg-primary"style=";height:100%;">
+      <p>@2018</p>
+    </footer>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
-</html>
+@endsection

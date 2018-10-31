@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  @import url('https://fonts.googleapis.com/css?family=Electrolize');
-.navbar-brand,h2.text-center,p{
+.navbar-brand,h1.display-4,h2.text-center,p{
   font-family: 'Electrolize', sans-serif;
 }
 .newev{
@@ -20,6 +20,29 @@ a:hover{
 }
 .currentev{
   background-color: #8EBAB9;
+}
+nav a{
+  color: #FFECDB;
+}
+.faq{
+  background-image: url(https://article.images.consumerreports.org/prod/content/dam/cro/news_articles/cars/2014-Ford-Focus-Electric-side-plug);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: #FFECDB;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faqtext{
+  display: flex;
+   flex-direction:column;
+   align-items:center;
+}
+p.lead{
+  font-size: 2rem;
 }
 :root {
   --blue: #3490dc;

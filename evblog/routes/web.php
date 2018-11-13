@@ -26,6 +26,6 @@ Route::get('/electricdrift/tripplanner',function(){
 Route::get('/electricdrift/faq', function(){
   return view('electricdrift.faq_page');
 });
-Route::get('/fuel_comparison',function(){
+Route::get('/electricdrift/fuel_comparison',function(){
   return view('electricdrift.fuel_comparison');
 });
